@@ -30,44 +30,44 @@
 
 
   /* LOGO */
-  nav.navbar .navbar-brand svg {
+  nav.navbar > .navbar-brand > svg {
       fill: var(--alt-text);
   }
 
-  nav.navbar .navbar-brand svg:hover {
+  nav.navbar > .navbar-brand > svg:hover {
       fill: var(--alt-hover-text);
   }
 
 
 
   /* CREDITOS */
-  nav.navbar .navbar-nav li:nth-child(2) a {
+  nav.navbar > .navbar-nav > li:nth-child(2) > a {
       color: var(--alt-text);
   }
 
-  nav.navbar .navbar-nav li:nth-child(2) a:hover {
+  nav.navbar > .navbar-nav > li:nth-child(2) > a:hover {
       color: var(--alt-hover-text);
   }
 
 
 
   /* IMG USUÁRIO */
-  nav.navbar .navbar-nav li:nth-child(5) div button {
+  nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
       box-shadow: 0 0 0 3px var(--hostoo);
   }
 
 
   /* INPUT SEARCH */
-  .hta-input-search .input-group {
+  .hta-input-search > .input-group {
       box-shadow: 0 0 4px 4px RGBA(51, 51, 51, .25);
   }
 
-  .hta-input-search .input-group input {
+  .hta-input-search > .input-group > input {
       background: var(--alt-secondary);
       border-color: var(--alt-secondary);
   }
 
-  .hta-input-search .input-group .input-group-append div {
+  .hta-input-search > .input-group > .input-group-append > div {
       background: var(--alt-secondary);
       border-color: var(--alt-secondary);
   }
@@ -75,8 +75,16 @@
 
 
   /* HOSPEDAGENS */
-  .h-sidebar-list .h-sidebar-title-wrapper h5 {
-      color: #fff;
+  .h-sidebar-list > .h-sidebar-title-wrapper > h5 {
+      color: var(--alt-text);
+  }
+
+  .h-sidebar-list > .h-list-wrapper a {
+      color: var(--alt-text);
+  }
+
+  .h-sidebar-list > .h-list-wrapper a:hover {
+      color: var(--alt-hover-text);
   }
 
 
@@ -92,5 +100,12 @@
 
   .card > .card-body * {
       color: var(--alt-text) !important;
+  }
+
+
+
+  /* LISTA DE SITES */
+  .h-o-card-hosting table th {
+      background: var(--hostoo) !important;
   }
 }
