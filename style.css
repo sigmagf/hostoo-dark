@@ -78,4 +78,19 @@
   .h-sidebar-list .h-sidebar-title-wrapper h5 {
       color: #fff;
   }
+
+
+
+  /* CARDs */
+  .card {
+      background: var(--alt-primary);
+  }
+
+  .card > .card-header * {
+      color: var(--alt-text) !important;
+  }
+
+  .card > .card-body * {
+      color: var(--alt-text) !important;
+  }
 }
