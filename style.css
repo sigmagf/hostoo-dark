@@ -1,111 +1,173 @@
-@-moz-document url-prefix("https://app.hostoo.io") {
-  :root {
-      --hostoo: #45307e;
-      --hostoo-hover: #8061d5;
-      --alt-background: #464646;
-      --alt-primary: #333;
-      --alt-secondary: #626262;
-      --alt-text: #fff;
-      --alt-hover-text: #dbdbdb;
-  }
+@-moz-document domain("app.hostoo.io") {
+:root {
+  --hostoo: #45307e;
+  --hostoo-hover: #8061d5;
+  --alt-background: #464646;
+  --alt-primary: #333;
+  --alt-secondary: #626262;
+  --alt-text: #fff;
+  --alt-hover-text: #dbdbdb;
+}
 
-  /* LOADING */
-  .h-m-page-loader {
-      background: rgba(0, 0, 0, .25);
-  }
+/* LOADING */
+.h-m-page-loader {
+  background: rgba(0, 0, 0, .25);
+}
 
-  /* MASTER BACKGROUND */
-  .h-layout.h-layout-full-height.h-layout-admin {
-      background: var(--alt-background);
-  }
-
-
-
-  /* NAVBAR */
-  nav.navbar {
-      background: var(--hostoo);
-      color: var(--alt-text);
-  }
+/* MASTER BACKGROUND */
+.h-layout.h-layout-full-height.h-layout-admin {
+  background: var(--alt-background);
+}
 
 
+/* INPUT SEARCH */
+.hta-input-search > .input-group {
+  box-shadow: 0 0 4px 4px RGBA(51, 51, 51, .25);
+}
 
-  /* LOGO */
-  nav.navbar > .navbar-brand > svg {
-      fill: var(--alt-text);
-  }
+.hta-input-search > .input-group > input {
+  background: var(--alt-secondary);
+  border-color: var(--alt-secondary);
+}
 
-  nav.navbar > .navbar-brand > svg:hover {
-      fill: var(--alt-hover-text);
-  }
+.hta-input-search > .input-group > .input-group-append > div {
+  background: var(--alt-secondary);
+  border-color: var(--alt-secondary);
+}
 
 
 
-  /* CREDITOS */
-  nav.navbar > .navbar-nav > li:nth-child(2) > a {
-      color: var(--alt-text);
-  }
+/* NAVBAR */
+nav.navbar {
+  background: var(--hostoo);
+  color: var(--alt-text);
+}
 
-  nav.navbar > .navbar-nav > li:nth-child(2) > a:hover {
-      color: var(--alt-hover-text);
-  }
+nav.navbar > .navbar-brand > svg {
+  fill: var(--alt-text);
+}
 
+nav.navbar > .navbar-brand > svg:hover {
+  fill: var(--alt-hover-text);
+}
 
+nav.navbar > .navbar-nav > li:nth-child(2) > a {
+  color: var(--alt-text);
+}
 
-  /* IMG USUÁRIO */
-  nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
-      box-shadow: 0 0 0 3px var(--hostoo);
-  }
+nav.navbar > .navbar-nav > li:nth-child(2) > a:hover {
+  color: var(--alt-hover-text);
+}
 
-
-  /* INPUT SEARCH */
-  .hta-input-search > .input-group {
-      box-shadow: 0 0 4px 4px RGBA(51, 51, 51, .25);
-  }
-
-  .hta-input-search > .input-group > input {
-      background: var(--alt-secondary);
-      border-color: var(--alt-secondary);
-  }
-
-  .hta-input-search > .input-group > .input-group-append > div {
-      background: var(--alt-secondary);
-      border-color: var(--alt-secondary);
-  }
+nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
+  box-shadow: 0 0 0 3px var(--hostoo);
+}
 
 
 
-  /* HOSPEDAGENS */
-  .h-sidebar-list > .h-sidebar-title-wrapper > h5 {
-      color: var(--alt-text);
-  }
+/* HOSPEDAGENS */
+.h-sidebar-hosting .h-sidebar-list .h-sidebar-title {
+    color: var(--alt-text);
+}
+.h-sidebar-hosting .h-sidebar-list .h-sidebar-title-wrapper::after {
+    border-color: var(--alt-text);
+}
 
-  .h-sidebar-list > .h-list-wrapper a {
-      color: var(--alt-text);
-  }
+.h-sidebar-hosting .h-sidebar-list .list-group .h-list-link {
+    color: var(--alt-text);
+}
 
-  .h-sidebar-list > .h-list-wrapper a:hover {
-      color: var(--alt-hover-text);
-  }
-
-
-
-  /* CARDs */
-  .card {
-      background: var(--alt-primary);
-  }
-
-  .card > .card-header * {
-      color: var(--alt-text) !important;
-  }
-
-  .card > .card-body * {
-      color: var(--alt-text) !important;
-  }
+.h-sidebar-hosting .h-sidebar-list .list-group .h-list-link:hover {
+    color: var(--alt-hover-text);
+}
 
 
 
-  /* LISTA DE SITES */
-  .h-o-card-hosting table th {
-      background: var(--hostoo) !important;
-  }
+/* CARDs */
+.card {
+  background: var(--alt-primary);
+}
+
+.card > .card-header,
+.card > .card-body,
+.card > .card-header .card-title,
+.card > .card-body a {
+  color: var(--alt-text);
+}
+
+.card > .card-body a:hover {
+  color: var(--alt-hover-text);
+}
+
+
+
+/* TABLE */
+.table > tbody > tr:nth-child(odd) {
+    color: var(--alt-text);
+    background: var(--alt-secondary);
+}
+.table > tbody > tr:nth-child(even) {
+    color: var(--alt-text);
+    background: var(--alt-primary);
+}
+
+
+
+/* MINHAS HOSPEDAGENS */
+.h-o-card-hosting .card-header h5 {
+  color: var(--alt-text);
+}
+
+.h-o-card-hosting .card-body a {
+  color: var(--alt-text);
+}
+
+.h-o-card-hosting .card-body a:hover {
+  color: var(--alt-hover-text);
+}
+
+.h-o-card-hosting .h-card-table-wrapper .vuetable-head-wrapper table {
+  color: var(--alt-text);
+}
+
+.h-o-card-hosting .vuetable-head-wrapper .table.table-custom-header thead th {
+    background: var(--hostoo);
+}
+.h-o-card-hosting .h-card-table-wrapper .vuetable-body-wrapper .domain-info-plan {
+  color: var(--alt-hover-text) !important;
+}
+
+
+
+/* LISTA DE SITES */
+.h-o-card-hosting table th {
+  background: var(--hostoo) !important;
+}
+
+.h-a-icon-hosting-status.h-status-active {
+  color: #3ec486;
+}
+
+
+
+/* SUPPORT TICKETS */
+.h-o-card-tickets .list-group-item-action {
+    background: var(--alt-secondary);
+}
+
+.h-o-card-tickets .list-group-item-action:hover {
+    background: var(--alt-background);
+}
+
+
+
+/* CARD DA HOSPEDAGEM */
+.h-o-card-hosting-top .nav-menu .nav-link,
+.h-o-card-hosting-top .nav-menu .nav-link.active {
+    color: var(--alt-text);
+}
+
+.h-o-card-hosting-top .nav-menu .nav-link:hover {
+    color: var(--alt-hover-text);
+}
 }
