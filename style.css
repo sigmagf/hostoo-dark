@@ -91,6 +91,7 @@ nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
 .card > .card-header,
 .card > .card-body,
 .card > .card-header .card-title,
+.card-body .card-title-inner,
 .card > .card-body a {
   color: var(--alt-text);
 }
@@ -169,5 +170,14 @@ nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
 
 .h-o-card-hosting-top .nav-menu .nav-link:hover {
     color: var(--alt-hover-text);
+}
+
+.h-m-nav-pages .nav-item a {
+    background: var(--alt-primary);
+    color: var(--alt-text);
+}
+
+.h-m-nav-pages .nav-item a:hover {
+    background: var(--alt-secondary);
 }
 }
