@@ -103,6 +103,14 @@ nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
 
 
 /* TABLE */
+.table.table-custom-header thead th {
+  background: var(--hostoo);
+  color: var(--alt-text);
+}
+.table.table-custom-header thead th:hover {
+  color: var(--alt-hover-text) !important;
+}
+
 .table > tbody > tr:nth-child(odd) {
     color: var(--alt-text);
     background: var(--alt-secondary);
@@ -179,5 +187,11 @@ nav.navbar > .navbar-nav > li:nth-child(5) > div > button {
 
 .h-m-nav-pages .nav-item a:hover {
     background: var(--alt-secondary);
+}
+
+.htm-table-dns tr.table-active:hover>td, .htm-table-dns tr.table-active>td {
+  border-radius: 0;
+  background: var(--hostoo-hover);
+  color: var(--alt-text);
 }
 }
